@@ -59,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   static const platform = const MethodChannel('channel/battery');
 
+//If using the iOS Simulator, note that it does not support battery APIs, and the app displays ‘battery info unavailable’.
   Future<void> _getBatteryPercentage() async {
     String batteryLevel;
     try {
